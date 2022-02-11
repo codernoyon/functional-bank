@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-yellow-300">
+    <main class="mt-14 mb-10">
+        <div class="title">
+            <h2 class="font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-4xl text-center"> <span class="text-purple-500 inline-block mb-1  lg:mb-1">আপনার সম্পদ</span> <br> আমাদের নিকট
+                <span class=" font-extrabold text-red-500 rounded-lg">আমানত!!!</span>
+            </h2>
+        </div>
+        <!-- balance and transection details section -->
+        <di v class="mx-auto grid md:grid-cols-2 lg:grid-cols-3 w-4/6 lg:w-2/4 mt-14 text-center gap-3">
+            <div class="bg-green-500 text-white p-8 rounded-lg drop-shadow-md hover:drop-shadow-lg">
+                <h3 class="text-2xl font-semibold">জমা</h3>
+                <h4 class="text-4xl">$<span id="current-deposit">00</span></h4>
+            </div>
+            <div class="bg-red-500 text-white p-8 rounded-lg drop-shadow-md hover:drop-shadow-lg">
+                <h3 class="text-2xl font-semibold">উত্তলোন</h3>
+                <h4 class="text-4xl">$<span id="current-withdraw">00</span></h4>
+            </div>
+            <div class="bg-blue-500 text-white p-8 rounded-lg drop-shadow-md hover:drop-shadow-lg">
+                <h3 class="text-2xl font-semibold">মোট বেলেন্স</h3>
+                <h4 class="text-4xl">$<span id="current-balance">1240</span></h4>
+            </div>
+        </di>
+        <!-- withdraw and deposite seciton -->
+        <div class="mx-auto w-4/6 lg:w-2/4 grid md:grid-cols-1 lg:grid-cols-2 gap-3 mt-10 ">
+            <div class="bg-green-500 p-4 rounded-md drop-shadow-md hover:drop-shadow-lg">
+                <h3 class="text-2xl mb-3 text-white font-medium">জমার পরিমান</h3>
+                <input placeholder="Deposit Amount" class="block w-full p-2 rounded-sm mb-3" type="number" name="number" id="deposit-input">
+                <button id="deposit-btn" class="bg-green-600 text-white py-2 px-3 rounded-md ring-2 ring-green-600">জমা</button>
+            </div>
+            <div class="bg-red-500 p-4 rounded-md drop-shadow-md hover:drop-shadow-lg">
+                <h3 class="text-2xl mb-3 text-white font-medium">উত্তলোনের পরিমান</h3>
+                <input placeholder="Withdraw Amount" class="block w-full p-2 rounded-sm mb-3" type="number" name="number" id="withdraw-input">
+                <button id="withdraw-btn" class="bg-red-600 text-white py-2 px-3 rounded-md ring-2 ring-red-600">উত্তলোন</button>
+            </div>
+        </div>
+    </main>
+    <!-- calculation script link -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
